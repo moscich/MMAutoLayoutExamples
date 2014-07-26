@@ -18,7 +18,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="30" height="31"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgC-Qg-5BU">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="PgC-Qg-5BU">
                             <rect key="frame" x="38" y="5" width="98" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -40,11 +40,33 @@
                         <outlet property="label" destination="PgC-Qg-5BU" id="v4k-Ro-SiS"/>
                     </connections>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ju3-Q4-2NU">
+                    <rect key="frame" x="218" y="33" width="82" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="8fa-yQ-E81"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-tK-lbN">
+                    <rect key="frame" x="0.0" y="33" width="82" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3Ir-Uj-aOa"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="UUu-rW-cEc" secondAttribute="centerX" id="4Da-Km-C30"/>
-                <constraint firstAttribute="centerY" secondItem="UUu-rW-cEc" secondAttribute="centerY" id="oNP-fA-LKl"/>
+                <constraint firstItem="4Wc-tK-lbN" firstAttribute="leading" secondItem="Iff-6m-dVJ" secondAttribute="leading" id="2nF-08-e3h"/>
+                <constraint firstItem="4Wc-tK-lbN" firstAttribute="width" secondItem="ju3-Q4-2NU" secondAttribute="width" id="P7G-ya-kNS"/>
+                <constraint firstAttribute="trailing" secondItem="ju3-Q4-2NU" secondAttribute="trailing" id="VSk-IN-Ghi"/>
+                <constraint firstItem="ju3-Q4-2NU" firstAttribute="leading" secondItem="UUu-rW-cEc" secondAttribute="trailing" id="aMw-0g-bIN"/>
+                <constraint firstItem="UUu-rW-cEc" firstAttribute="leading" secondItem="4Wc-tK-lbN" secondAttribute="trailing" id="b0j-LI-F5i"/>
+                <constraint firstAttribute="centerY" secondItem="ju3-Q4-2NU" secondAttribute="centerY" id="iMo-D4-TVd"/>
+                <constraint firstAttribute="centerY" secondItem="4Wc-tK-lbN" secondAttribute="centerY" id="qZA-Xl-eeD"/>
+                <constraint firstAttribute="centerY" secondItem="UUu-rW-cEc" secondAttribute="centerY" id="r8A-Dc-I0p"/>
             </constraints>
             <connections>
                 <outlet property="centerContainer" destination="UUu-rW-cEc" id="9oO-rp-7OG"/>

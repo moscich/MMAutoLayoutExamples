@@ -39,10 +39,6 @@
   [self.rightSpacer setTranslatesAutoresizingMaskIntoConstraints:NO];
   self.rightSpacer.backgroundColor = [UIColor redColor];
   [self.containerView addSubview:self.rightSpacer];
-
-  [self.happyView setContentCompressionResistancePriority:1000 forAxis:UILayoutConstraintAxisHorizontal];
-  [self.secondHappyView setContentHuggingPriority:750 forAxis:UILayoutConstraintAxisHorizontal];
-  [self.secondHappyView setContentCompressionResistancePriority:250 forAxis:UILayoutConstraintAxisHorizontal];
 }
 
 - (void)updateConstraints {
@@ -50,7 +46,7 @@
 
   NSDictionary *views = NSDictionaryOfVariableBindings(_happyView, _secondHappyView, _rightSpacer, _leftSpacer);
 
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(20@750)-[_leftSpacer][_happyView(180@500)]-[_secondHappyView(180@500)][_rightSpacer]-(20@750)-|" options:0 metrics:nil views:views]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(20@900)-[_leftSpacer][_happyView(180@500)]-[_secondHappyView(180@500)][_rightSpacer]-(20@900)-|" options:0 metrics:nil views:views]];
   [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(>=20@750)-[_happyView(100@500)]-(>=20@750)-|" options:0 metrics:nil views:views]];
   [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(>=20@750)-[_secondHappyView(100@500)]-(>=20@750)-|" options:0 metrics:nil views:views]];
   [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_leftSpacer]-|" options:0 metrics:nil views:views]];
@@ -63,6 +59,25 @@
   [self addConstraint:[NSLayoutConstraint constraintWithItem:self.leftSpacer attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.rightSpacer attribute:NSLayoutAttributeWidth multiplier:1.0 constant:1.0]];
 
 //  [self addConstraint:self.containerViewWidthConstraint];
+}
+
+- (void)setCompressionAndHugging:(UISegmentedControl *)control
+{
+  switch (control.selectedSegmentIndex)
+  {
+    case 0:
+      [self.happyView setContentCompressionResistancePriority:750 forAxis:UILayoutConstraintAxisHorizontal];
+      [self.happyView setContentHuggingPriority:250 forAxis:UILayoutConstraintAxisHorizontal];
+      [self.secondHappyView setContentCompressionResistancePriority:750 forAxis:UILayoutConstraintAxisHorizontal];
+      [self.secondHappyView setContentHuggingPriority:250 forAxis:UILayoutConstraintAxisHorizontal];
+      break;
+    case 1:
+      [self.happyView setContentCompressionResistancePriority:1000 forAxis:UILayoutConstraintAxisHorizontal];
+      [self.secondHappyView setContentHuggingPriority:750 forAxis:UILayoutConstraintAxisHorizontal];
+      [self.secondHappyView setContentCompressionResistancePriority:0 forAxis:UILayoutConstraintAxisHorizontal];
+      break;
+    default:break;
+  }
 }
 
 @end

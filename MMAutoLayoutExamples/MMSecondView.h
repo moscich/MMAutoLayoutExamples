@@ -15,4 +15,6 @@
 @property (nonatomic, strong) MMHappyView *secondHappyView;
 
 @property(nonatomic, strong) NSLayoutConstraint *containerViewWidthConstraint;
+
+- (IBAction)setCompressionAndHugging:(UISegmentedControl *)control;
 @end
