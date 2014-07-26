@@ -5,12 +5,25 @@
 
 #import "MMFirstViewController.h"
 
+@interface MMFirstViewController ()
+@property int model;
+@end
 
 @implementation MMFirstViewController {
 
 }
+
+- (id)init {
+  self = [super init];
+  if (self) {
+
+  }
+
+  return self;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return 2;
+  return self.model;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -28,5 +41,16 @@
   self.constraint.constant = slider.value;
 }
 
+- (IBAction)addCell {
+  self.model ++;
+  [self.tableView invalidateIntrinsicContentSize];
+  [self.tableView reloadData];
+}
+
+- (IBAction)removeCell {
+  self.model --;
+  [self.tableView invalidateIntrinsicContentSize];
+  [self.tableView reloadData];
+}
 
 @end

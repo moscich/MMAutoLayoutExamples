@@ -8,9 +8,11 @@
 
 @interface MMFirstViewController : UIViewController <UITableViewDataSource>
 
-@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *constraint;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 - (IBAction)sliderChange:(UISlider *)slider;
+- (IBAction)addCell;
+- (IBAction)removeCell;
 
 @end
