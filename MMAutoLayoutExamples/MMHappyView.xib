@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Iff-6m-dVJ" customClass="MMHappyView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUu-rW-cEc" customClass="MMHappyViewCenterContainer">
+                    <rect key="frame" x="82" y="48" width="136" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minion.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Awa-un-Sxn">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="31"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgC-Qg-5BU">
+                            <rect key="frame" x="38" y="5" width="98" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="PgC-Qg-5BU" firstAttribute="leading" secondItem="Awa-un-Sxn" secondAttribute="trailing" constant="8" symbolic="YES" id="4MV-Ql-CjT"/>
+                        <constraint firstItem="Awa-un-Sxn" firstAttribute="top" secondItem="UUu-rW-cEc" secondAttribute="top" id="Abb-za-Yj9"/>
+                        <constraint firstItem="PgC-Qg-5BU" firstAttribute="top" secondItem="UUu-rW-cEc" secondAttribute="top" constant="5" id="Hsn-La-Hmq"/>
+                        <constraint firstItem="Awa-un-Sxn" firstAttribute="leading" secondItem="UUu-rW-cEc" secondAttribute="leading" id="O01-GZ-6PS"/>
+                        <constraint firstAttribute="trailing" secondItem="PgC-Qg-5BU" secondAttribute="trailing" id="ck2-cm-o9N"/>
+                        <constraint firstAttribute="bottom" secondItem="PgC-Qg-5BU" secondAttribute="bottom" constant="5" id="fxY-O7-W1i"/>
+                        <constraint firstAttribute="bottom" secondItem="Awa-un-Sxn" secondAttribute="bottom" id="gSY-Zm-e7P"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="imageView" destination="Awa-un-Sxn" id="Qwe-X0-JKp"/>
+                        <outlet property="label" destination="PgC-Qg-5BU" id="v4k-Ro-SiS"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="UUu-rW-cEc" secondAttribute="centerX" id="4Da-Km-C30"/>
+                <constraint firstAttribute="centerY" secondItem="UUu-rW-cEc" secondAttribute="centerY" id="oNP-fA-LKl"/>
+            </constraints>
+            <connections>
+                <outlet property="centerContainer" destination="UUu-rW-cEc" id="9oO-rp-7OG"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="minion.jpg" width="30" height="30"/>
+    </resources>
+</document>

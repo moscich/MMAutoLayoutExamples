@@ -8,6 +8,7 @@
 
 #import "MMAppDelegate.h"
 #import "MMFirstViewController.h"
+#import "MMSecondViewController.h"
 
 @implementation MMAppDelegate
 
@@ -18,7 +19,8 @@
   [self.window makeKeyAndVisible];
 
   MMFirstViewController *firstViewController = [MMFirstViewController new];
-  self.window.rootViewController = firstViewController;
+  MMSecondViewController *secondViewController = [MMSecondViewController new];
+  self.window.rootViewController = secondViewController;
 
   return YES;
 }
