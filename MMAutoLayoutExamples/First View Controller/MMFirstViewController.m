@@ -16,7 +16,7 @@
 - (id)init {
   self = [super init];
   if (self) {
-
+    self.automaticallyAdjustsScrollViewInsets = NO;
   }
 
   return self;

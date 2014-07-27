@@ -9,6 +9,7 @@
 #import "MMAppDelegate.h"
 #import "MMFirstViewController.h"
 #import "MMSecondViewController.h"
+#import "MMTableViewController.h"
 
 @implementation MMAppDelegate
 
@@ -18,9 +19,11 @@
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
 
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[MMTableViewController new]];
+
   MMFirstViewController *firstViewController = [MMFirstViewController new];
   MMSecondViewController *secondViewController = [MMSecondViewController new];
-  self.window.rootViewController = secondViewController;
+  self.window.rootViewController = navigationController;
 
   return YES;
 }
