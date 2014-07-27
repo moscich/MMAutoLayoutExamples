@@ -15,6 +15,9 @@
 @property (nonatomic, strong) MMHappyView *secondHappyView;
 
 @property(nonatomic, strong) NSLayoutConstraint *containerViewWidthConstraint;
+@property(nonatomic, strong) NSLayoutConstraint *equalViewsConstraints;
 
 - (IBAction)setCompressionAndHugging:(UISegmentedControl *)control;
+- (IBAction)equalitySwitchTapped:(UISwitch *)equalitySwitch;
+- (IBAction)swapLabels;
 @end

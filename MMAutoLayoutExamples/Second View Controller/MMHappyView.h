@@ -12,4 +12,7 @@
 
 @property (nonatomic, weak) IBOutlet MMHappyViewCenterContainer *centerContainer;
 
+- (void)setTitleLabel:(NSString *)string;
+- (NSString *)getTitleLabel;
+
 @end

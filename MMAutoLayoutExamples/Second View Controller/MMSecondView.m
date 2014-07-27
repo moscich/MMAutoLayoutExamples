@@ -26,10 +26,13 @@
 
   self.secondHappyView = [[[NSBundle mainBundle] loadNibNamed:@"MMHappyView" owner:self options:nil] lastObject];
   [self.secondHappyView setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [self.secondHappyView setTitleLabel:@"Hopsa"];
 
   [self.containerView addSubview:self.happyView];
   [self.containerView addSubview:self.secondHappyView];
   self.containerViewWidthConstraint = [NSLayoutConstraint constraintWithItem:self.containerView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1.0 constant:512];
+
+  self.equalViewsConstraints = [NSLayoutConstraint constraintWithItem:self.happyView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.secondHappyView attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0];
 
   self.leftSpacer = [UIView new];
   [self.leftSpacer setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -78,6 +81,26 @@
       break;
     default:break;
   }
+}
+
+- (IBAction)equalitySwitchTapped:(UISwitch *)equalitySwitch {
+  if(equalitySwitch.on){
+    [self addConstraint:self.equalViewsConstraints];
+  }
+  else{
+    [self removeConstraint:self.equalViewsConstraints];
+  }
+//  [self setNeedsUpdateConstraints];
+}
+
+- (IBAction)swapLabels {
+  NSString *temp = [self.secondHappyView getTitleLabel];
+  [self.secondHappyView setTitleLabel:[self.happyView getTitleLabel]];
+  [self.happyView setTitleLabel:temp];
+  [self.happyView invalidateIntrinsicContentSize];
+  [self.secondHappyView invalidateIntrinsicContentSize];
+  [self setNeedsLayout];
+
 }
 
 @end

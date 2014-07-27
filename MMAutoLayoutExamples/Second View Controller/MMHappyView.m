@@ -15,4 +15,12 @@
   return [self.centerContainer intrinsicContentSize];
 }
 
+- (void)setTitleLabel:(NSString *)string {
+  self.centerContainer.label.text = string;
+}
+
+- (NSString *)getTitleLabel {
+  return self.centerContainer.label.text;
+}
+
 @end
