@@ -2,7 +2,7 @@
 
 @class UILabel;
 
-@interface TemporaryViewName : UIView
+@interface ChangingLayoutView : UIView
 
 @property (nonatomic, strong) UIButton *disconnectButton;
 @property (nonatomic, strong) UIButton *cancelButton;

@@ -1,13 +1,13 @@
 #import <UIKit/UIKit.h>
-#import "TemporaryViewName.h"
+#import "ChangingLayoutView.h"
 
-@interface TemporaryViewName ()
+@interface ChangingLayoutView ()
 
 @property(nonatomic, assign) BOOL isConfirmationVisible;
 
 @end
 
-@implementation TemporaryViewName {
+@implementation ChangingLayoutView {
 
 }
 
@@ -15,7 +15,7 @@
   [self setTranslatesAutoresizingMaskIntoConstraints:NO];
   _disconnectButton = [UIButton new];
   [_disconnectButton setTranslatesAutoresizingMaskIntoConstraints:NO];
-  [_disconnectButton addTarget:self action:@selector(disconnectButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+  [_disconnectButton addTarget:self action:@selector(endButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
   _disconnectButton.backgroundColor = [UIColor redColor];
   [_disconnectButton setTitle:@"End" forState:UIControlStateNormal];
 
@@ -50,7 +50,7 @@
           }];
 }
 
-- (void)disconnectButtonTapped:(id)disconnectButtonTapped {
+- (void)endButtonTapped:(id)disconnectButtonTapped {
   if (!self.isConfirmationVisible)
     [UIView animateWithDuration:0.5 animations:^
             {

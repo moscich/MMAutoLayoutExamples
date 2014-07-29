@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5304208704EB9C385D5CF841 /* TemporaryViewName.m in Sources */ = {isa = PBXBuildFile; fileRef = 530429BE32C32FFE4295820D /* TemporaryViewName.m */; };
+		5304208704EB9C385D5CF841 /* ChangingLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 530429BE32C32FFE4295820D /* ChangingLayoutView.m */; };
 		5304209DCFC44713667AE8BA /* MMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304282A7D26BA0F50652932 /* MMTableView.m */; };
 		530421280349DD1C983337BA /* MMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042EC1F073BF28085F207C /* MMTableViewController.m */; };
 		5304223838CD6006AF097982 /* MMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304261F8AB6BF99CBB196A8 /* MMSecondViewController.m */; };
@@ -67,8 +67,8 @@
 		530429418EF0C6478D3B00D5 /* MMSecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecondView.h; sourceTree = "<group>"; };
 		530429558E117BE5187B86EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		530429604A14DA85D2EF5142 /* MMThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMThirdViewController.h; sourceTree = "<group>"; };
-		530429A8A542C39492A3B05D /* TemporaryViewName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemporaryViewName.h; sourceTree = "<group>"; };
-		530429BE32C32FFE4295820D /* TemporaryViewName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemporaryViewName.m; sourceTree = "<group>"; };
+		530429A8A542C39492A3B05D /* ChangingLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangingLayoutView.h; sourceTree = "<group>"; };
+		530429BE32C32FFE4295820D /* ChangingLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangingLayoutView.m; sourceTree = "<group>"; };
 		53042AE80453BD5EED257F87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		53042B135364316797F75B9A /* MMHappyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMHappyView.xib; sourceTree = "<group>"; };
 		53042B1AC57097743B749BDB /* minion@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "minion@2x.jpg"; sourceTree = "<group>"; };
@@ -179,8 +179,8 @@
 				5304260E846EBF602CD79747 /* Second View Controller */,
 				53042EC1F073BF28085F207C /* MMTableViewController.m */,
 				5304273512B48560B2A97F25 /* MMTableViewController.h */,
-				530429BE32C32FFE4295820D /* TemporaryViewName.m */,
-				530429A8A542C39492A3B05D /* TemporaryViewName.h */,
+				530429BE32C32FFE4295820D /* ChangingLayoutView.m */,
+				530429A8A542C39492A3B05D /* ChangingLayoutView.h */,
 				5304240CB8456E992F11467E /* Third View Controller */,
 			);
 			path = MMAutoLayoutExamples;
@@ -331,7 +331,7 @@
 				530428E07D962B77658E46FD /* MMSecondView.m in Sources */,
 				5304223838CD6006AF097982 /* MMSecondViewController.m in Sources */,
 				530421280349DD1C983337BA /* MMTableViewController.m in Sources */,
-				5304208704EB9C385D5CF841 /* TemporaryViewName.m in Sources */,
+				5304208704EB9C385D5CF841 /* ChangingLayoutView.m in Sources */,
 				530428793D5B963AFA2661E9 /* MMThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
