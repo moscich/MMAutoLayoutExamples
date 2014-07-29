@@ -21,8 +21,6 @@
 
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[MMTableViewController new]];
 
-  MMFirstViewController *firstViewController = [MMFirstViewController new];
-  MMSecondViewController *secondViewController = [MMSecondViewController new];
   self.window.rootViewController = navigationController;
 
   return YES;

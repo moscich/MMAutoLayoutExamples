@@ -6,6 +6,7 @@
 #import "MMTableViewController.h"
 #import "MMFirstViewController.h"
 #import "MMSecondViewController.h"
+#import "MMThirdViewController.h"
 
 
 @implementation MMTableViewController {
@@ -15,7 +16,7 @@
 - (id)init {
   self = [super init];
   if (self) {
-    self.controllers = @[[MMFirstViewController new], [MMSecondViewController new]];
+    self.controllers = @[[MMFirstViewController new], [MMSecondViewController new], [MMThirdViewController new]];
   }
 
   return self;
