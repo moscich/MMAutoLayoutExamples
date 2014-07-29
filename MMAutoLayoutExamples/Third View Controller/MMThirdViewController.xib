@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="5056"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MMThirdViewController">
@@ -19,13 +19,26 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="32" showsHorizontalScrollIndicator="NO" text="Test" translatesAutoresizingMaskIntoConstraints="NO" id="6qT-eS-B2k" customClass="MMTextView">
+                    <rect key="frame" x="392" y="368" width="240" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="kLm-Hk-Lnr"/>
+                    </constraints>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="wU9-mm-Qon" secondAttribute="centerX" id="3vm-qb-OI7"/>
                 <constraint firstItem="wU9-mm-Qon" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="J8w-TR-X4V"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wU9-mm-Qon" secondAttribute="trailing" constant="20" symbolic="YES" id="mu1-Px-2J5"/>
+                <constraint firstAttribute="centerY" secondItem="6qT-eS-B2k" secondAttribute="centerY" id="nTf-5I-x2K"/>
                 <constraint firstAttribute="bottom" secondItem="wU9-mm-Qon" secondAttribute="bottom" constant="20" id="oqI-Jf-Wsq"/>
+                <constraint firstAttribute="centerX" secondItem="6qT-eS-B2k" secondAttribute="centerX" id="ueg-sc-tX0"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
