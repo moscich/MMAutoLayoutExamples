@@ -17,24 +17,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGN-Ff-GSv" userLabel="Expandable view">
-                    <rect key="frame" x="777" y="258" width="227" height="490"/>
+                    <rect key="frame" x="777" y="307" width="227" height="441"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-hX-1tb">
-                            <rect key="frame" x="0.0" y="0.0" width="227" height="490"/>
+                            <rect key="frame" x="0.0" y="0.0" width="227" height="441"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2s-mT-YdX">
-                                    <rect key="frame" x="0.0" y="0.0" width="227" height="490"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="227" height="441"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" placeholderIntrinsicWidth="187" placeholderIntrinsicHeight="315" translatesAutoresizingMaskIntoConstraints="NO" id="i49-z6-K68">
-                                            <rect key="frame" x="20" y="49" width="187" height="315"/>
+                                            <rect key="frame" x="20" y="115" width="187" height="200"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="187" id="Sls-J7-HVo"/>
-                                                <constraint firstAttribute="height" constant="315" id="TF4-07-0lM"/>
+                                                <constraint firstAttribute="height" constant="200" id="TF4-07-0lM"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPP-Ex-dkh">
@@ -44,33 +44,44 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIC-5M-Yhq">
-                                            <rect key="frame" x="93" y="449" width="42" height="21"/>
+                                            <rect key="frame" x="93" y="400" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="187" placeholderIntrinsicHeight="69" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Os2-eP-Dir" customClass="MMTableView">
-                                            <rect key="frame" x="20" y="372" width="187" height="69"/>
+                                            <rect key="frame" x="20" y="323" width="187" height="69"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <outlet property="dataSource" destination="-1" id="K2J-h0-H33"/>
                                             </connections>
                                         </tableView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="187" placeholderIntrinsicHeight="58" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztg-ud-3ZY" customClass="MMTextView">
+                                            <rect key="frame" x="20" y="49" width="187" height="58"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="i49-z6-K68" firstAttribute="top" secondItem="HPP-Ex-dkh" secondAttribute="bottom" constant="8" symbolic="YES" id="7fe-7r-uy0"/>
                                         <constraint firstAttribute="centerX" secondItem="rIC-5M-Yhq" secondAttribute="centerX" id="9Rc-IP-Q0s"/>
                                         <constraint firstAttribute="bottom" secondItem="rIC-5M-Yhq" secondAttribute="bottom" constant="20" symbolic="YES" id="B6T-XE-f41"/>
                                         <constraint firstItem="HPP-Ex-dkh" firstAttribute="top" secondItem="l2s-mT-YdX" secondAttribute="top" constant="20" symbolic="YES" id="Dkg-mS-ydH"/>
+                                        <constraint firstItem="ztg-ud-3ZY" firstAttribute="top" secondItem="HPP-Ex-dkh" secondAttribute="bottom" constant="8" symbolic="YES" id="Ghq-oc-hWd"/>
                                         <constraint firstItem="rIC-5M-Yhq" firstAttribute="top" secondItem="Os2-eP-Dir" secondAttribute="bottom" constant="8" symbolic="YES" id="GtD-Gp-LDq"/>
+                                        <constraint firstItem="i49-z6-K68" firstAttribute="top" secondItem="ztg-ud-3ZY" secondAttribute="bottom" constant="8" symbolic="YES" id="Jhn-Nn-s3y"/>
                                         <constraint firstItem="i49-z6-K68" firstAttribute="width" secondItem="Os2-eP-Dir" secondAttribute="width" id="QDc-n4-eNq"/>
                                         <constraint firstItem="i49-z6-K68" firstAttribute="leading" secondItem="l2s-mT-YdX" secondAttribute="leading" constant="20" symbolic="YES" id="SkR-Na-dED"/>
                                         <constraint firstAttribute="trailing" secondItem="i49-z6-K68" secondAttribute="trailing" constant="20" symbolic="YES" id="XXS-fh-AOK"/>
                                         <constraint firstItem="Os2-eP-Dir" firstAttribute="top" secondItem="i49-z6-K68" secondAttribute="bottom" constant="8" symbolic="YES" id="Yk0-GI-p3h"/>
                                         <constraint firstAttribute="centerX" secondItem="HPP-Ex-dkh" secondAttribute="centerX" id="adS-KD-vAf"/>
+                                        <constraint firstAttribute="centerX" secondItem="ztg-ud-3ZY" secondAttribute="centerX" id="arL-Ou-xNC"/>
                                         <constraint firstAttribute="centerX" secondItem="Os2-eP-Dir" secondAttribute="centerX" id="tan-0M-wdu"/>
+                                        <constraint firstItem="ztg-ud-3ZY" firstAttribute="width" secondItem="i49-z6-K68" secondAttribute="width" id="xyZ-eC-2Xs"/>
                                     </constraints>
                                 </view>
                             </subviews>
