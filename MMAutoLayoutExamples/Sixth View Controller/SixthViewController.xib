@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SixthViewController">
+            <connections>
+                <outlet property="blueMiddle" destination="nDw-vV-Htu" id="52z-hB-eLl"/>
+                <outlet property="redMiddle" destination="Shr-pz-2za" id="vzz-Xy-UJh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzw-Y5-m6o">
+                    <rect key="frame" x="197" y="115" width="110" height="140"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.30035649372605877" blue="0.15688389678864245" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="SIh-Ee-cOU"/>
+                        <constraint firstAttribute="height" constant="140" id="Z9Y-sm-Z9k"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNG-ku-bQP">
+                    <rect key="frame" x="197" y="305" width="110" height="140"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.21298273499686771" green="0.53569547534579609" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="4Ar-8O-i9a"/>
+                        <constraint firstAttribute="height" constant="140" id="gi3-y4-iOu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDw-vV-Htu">
+                    <rect key="frame" x="327" y="305" width="110" height="140"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.21298273500000001" green="0.53569547529999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="5gZ-23-Rr3"/>
+                        <constraint firstAttribute="width" constant="110" id="qQp-VN-tTD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7AB-vq-ZiR">
+                    <rect key="frame" x="457" y="305" width="110" height="140"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.21298273500000001" green="0.53569547529999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="LLk-N1-vLX"/>
+                        <constraint firstAttribute="width" constant="110" id="MIH-li-kxU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Shr-pz-2za">
+                    <rect key="frame" x="327" y="115" width="110" height="140"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.3003564937" blue="0.15688389680000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="PgG-1w-f2s"/>
+                        <constraint firstAttribute="height" constant="140" id="QBK-P0-iyv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b58-Hh-OtV">
+                    <rect key="frame" x="457" y="115" width="110" height="140"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.3003564937" blue="0.15688389680000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="ah4-XD-QEM"/>
+                        <constraint firstAttribute="width" constant="110" id="zcR-ia-WaE"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMG-fA-ORV">
+                    <rect key="frame" x="50" y="170" width="47" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Kill">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="kill:" destination="-1" eventType="touchUpInside" id="aY0-vH-cid"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ND-7I-K9f">
+                    <rect key="frame" x="50" y="350" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Kill Kill">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="killKill:" destination="-1" eventType="touchUpInside" id="OWW-B1-eCc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7AB-vq-ZiR" firstAttribute="leading" secondItem="nDw-vV-Htu" secondAttribute="trailing" constant="20" id="8N9-hY-Ssz"/>
+                <constraint firstItem="b58-Hh-OtV" firstAttribute="leading" secondItem="Shr-pz-2za" secondAttribute="trailing" constant="20" id="8jJ-cK-UWk"/>
+                <constraint firstItem="PMG-fA-ORV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Ddt-yh-qvW"/>
+                <constraint firstItem="8ND-7I-K9f" firstAttribute="top" secondItem="PMG-fA-ORV" secondAttribute="bottom" constant="150" id="DiP-xU-WgH"/>
+                <constraint firstItem="7AB-vq-ZiR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NNG-ku-bQP" secondAttribute="trailing" constant="20" id="F3m-L4-KGd"/>
+                <constraint firstItem="wzw-Y5-m6o" firstAttribute="leading" secondItem="PMG-fA-ORV" secondAttribute="trailing" constant="100" id="FD6-tY-6te"/>
+                <constraint firstItem="Shr-pz-2za" firstAttribute="top" secondItem="b58-Hh-OtV" secondAttribute="top" id="FIb-by-Pbo"/>
+                <constraint firstItem="8ND-7I-K9f" firstAttribute="width" secondItem="PMG-fA-ORV" secondAttribute="width" id="G3b-ec-dbi"/>
+                <constraint firstItem="nDw-vV-Htu" firstAttribute="leading" secondItem="NNG-ku-bQP" secondAttribute="trailing" constant="20" id="L3M-yP-hSh"/>
+                <constraint firstItem="NNG-ku-bQP" firstAttribute="top" secondItem="7AB-vq-ZiR" secondAttribute="top" id="TDy-bC-LKc"/>
+                <constraint firstItem="Shr-pz-2za" firstAttribute="leading" secondItem="wzw-Y5-m6o" secondAttribute="trailing" constant="20" id="UQm-dA-89f"/>
+                <constraint firstItem="Shr-pz-2za" firstAttribute="top" secondItem="wzw-Y5-m6o" secondAttribute="top" id="V0Z-Dh-Hzw"/>
+                <constraint firstItem="PMG-fA-ORV" firstAttribute="centerY" secondItem="wzw-Y5-m6o" secondAttribute="centerY" id="d5j-rl-PD8"/>
+                <constraint firstItem="NNG-ku-bQP" firstAttribute="top" secondItem="wzw-Y5-m6o" secondAttribute="bottom" constant="50" id="e0h-Ql-hI6"/>
+                <constraint firstItem="NNG-ku-bQP" firstAttribute="top" secondItem="nDw-vV-Htu" secondAttribute="top" id="irs-xK-ofT"/>
+                <constraint firstItem="PMG-fA-ORV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="170" id="kBc-Kq-uh7"/>
+                <constraint firstItem="wzw-Y5-m6o" firstAttribute="leading" secondItem="NNG-ku-bQP" secondAttribute="leading" id="pDW-XC-U2z"/>
+                <constraint firstItem="8ND-7I-K9f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="qaw-XF-GVr"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

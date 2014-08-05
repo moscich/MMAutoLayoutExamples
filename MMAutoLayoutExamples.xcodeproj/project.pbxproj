@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B3578D1990CC5E00F3FE23 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B3578C1990CC5E00F3FE23 /* FifthViewController.m */; };
+		24B357901990CC8500F3FE23 /* FifthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B3578F1990CC8500F3FE23 /* FifthViewController.xib */; };
+		24B357941990D36800F3FE23 /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B357921990D36800F3FE23 /* SixthViewController.m */; };
+		24B357951990D36800F3FE23 /* SixthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B357931990D36800F3FE23 /* SixthViewController.xib */; };
 		5304208704EB9C385D5CF841 /* ChangingLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 530429BE32C32FFE4295820D /* ChangingLayoutView.m */; };
 		5304209DCFC44713667AE8BA /* MMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304282A7D26BA0F50652932 /* MMTableView.m */; };
 		530421280349DD1C983337BA /* MMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042EC1F073BF28085F207C /* MMTableViewController.m */; };
@@ -47,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24B3578B1990CC5E00F3FE23 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FifthViewController.h; path = "Fifth View Controller/FifthViewController.h"; sourceTree = "<group>"; };
+		24B3578C1990CC5E00F3FE23 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FifthViewController.m; path = "Fifth View Controller/FifthViewController.m"; sourceTree = "<group>"; };
+		24B3578F1990CC8500F3FE23 /* FifthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FifthViewController.xib; sourceTree = "<group>"; };
+		24B357911990D36800F3FE23 /* SixthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SixthViewController.h; path = "Sixth View Controller/SixthViewController.h"; sourceTree = "<group>"; };
+		24B357921990D36800F3FE23 /* SixthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SixthViewController.m; path = "Sixth View Controller/SixthViewController.m"; sourceTree = "<group>"; };
+		24B357931990D36800F3FE23 /* SixthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SixthViewController.xib; path = "Sixth View Controller/SixthViewController.xib"; sourceTree = "<group>"; };
 		53042030CDCA90CBC6CB632E /* MMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableView.h; sourceTree = "<group>"; };
 		530420A02A1BA5AA28B6CE13 /* MMHappyViewCenterContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHappyViewCenterContainer.h; sourceTree = "<group>"; };
 		530420AD2FC927E5F164F9B2 /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +124,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24B3578E1990CC6C00F3FE23 /* Fifth VC */ = {
+			isa = PBXGroup;
+			children = (
+				24B3578B1990CC5E00F3FE23 /* FifthViewController.h */,
+				24B3578C1990CC5E00F3FE23 /* FifthViewController.m */,
+				24B3578F1990CC8500F3FE23 /* FifthViewController.xib */,
+			);
+			name = "Fifth VC";
+			sourceTree = "<group>";
+		};
+		24B357961990D36F00F3FE23 /* Sixth VC */ = {
+			isa = PBXGroup;
+			children = (
+				24B357911990D36800F3FE23 /* SixthViewController.h */,
+				24B357921990D36800F3FE23 /* SixthViewController.m */,
+				24B357931990D36800F3FE23 /* SixthViewController.xib */,
+			);
+			name = "Sixth VC";
+			sourceTree = "<group>";
+		};
 		5304240CB8456E992F11467E /* Third View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +225,8 @@
 				530429A8A542C39492A3B05D /* ChangingLayoutView.h */,
 				5304240CB8456E992F11467E /* Third View Controller */,
 				530428CEA6B22E6EF92B1D00 /* Fourth View Controller */,
+				24B3578E1990CC6C00F3FE23 /* Fifth VC */,
+				24B357961990D36F00F3FE23 /* Sixth VC */,
 			);
 			path = MMAutoLayoutExamples;
 			sourceTree = "<group>";
@@ -314,8 +346,10 @@
 				53042AA86DD889545EBD114D /* Images.xcassets in Resources */,
 				53042B77FCE066C49AA4638F /* MMFirstView.xib in Resources */,
 				53042829027DEF803B858C3D /* minion@2x.jpg in Resources */,
+				24B357901990CC8500F3FE23 /* FifthViewController.xib in Resources */,
 				53042BDC9D45C7537C8FBD71 /* MMHappyView.xib in Resources */,
 				53042DD9919ED6F11D764A16 /* MMSecondView.xib in Resources */,
+				24B357951990D36800F3FE23 /* SixthViewController.xib in Resources */,
 				530426A410A3DA3198A2D359 /* MMThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B3578D1990CC5E00F3FE23 /* FifthViewController.m in Sources */,
 				53042C2F83CF950BA0C1DC7C /* main.m in Sources */,
 				53042AF67E752DDB2C538A27 /* MMAppDelegate.m in Sources */,
 				530425545C44A267A5AA8BD3 /* MMFirstViewController.m in Sources */,
@@ -347,6 +382,7 @@
 				5304208704EB9C385D5CF841 /* ChangingLayoutView.m in Sources */,
 				530428793D5B963AFA2661E9 /* MMThirdViewController.m in Sources */,
 				53042F4B2D9DFC8EB4E142C4 /* MMTextView.m in Sources */,
+				24B357941990D36800F3FE23 /* SixthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FifthViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="rQo-n3-CTt"/>
+                <outlet property="viewNO" destination="dYE-H7-6LX" id="0DN-5b-Y3R"/>
+                <outlet property="viewOK" destination="ohF-TO-79p" id="c2C-5G-ccj"/>
+                <outlet property="viewOKconstraint" destination="dTJ-jN-HGS" id="kvQ-SY-STr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-TO-79p">
+                    <rect key="frame" x="105" y="95" width="500" height="40"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.92010374260000005" green="1" blue="0.4452079169" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="500" id="dTJ-jN-HGS"/>
+                        <constraint firstAttribute="height" constant="40" id="rgs-tv-aDZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-H7-6LX">
+                    <rect key="frame" x="105" y="155" width="500" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.15852765029999999" blue="0.20926436330000001" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="500" id="jRO-Z0-JH8"/>
+                        <constraint firstAttribute="height" constant="40" id="qVn-PF-0Ew"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zt3-RN-AYr">
+                    <rect key="frame" x="20" y="100" width="65" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Opc-pI-23m"/>
+                    </constraints>
+                    <state key="normal" title="Animate!">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="animateOK:" destination="-1" eventType="touchUpInside" id="wAo-LJ-jrh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S44-pl-N2G">
+                    <rect key="frame" x="20" y="160" width="65" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="*&amp;#$@#@">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="animateNO:" destination="-1" eventType="touchUpInside" id="bEc-z1-MFw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zt3-RN-AYr" firstAttribute="width" secondItem="S44-pl-N2G" secondAttribute="width" id="0j4-wd-2Gg"/>
+                <constraint firstItem="Zt3-RN-AYr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="2lf-tc-xXA"/>
+                <constraint firstItem="S44-pl-N2G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4BF-l8-hLa"/>
+                <constraint firstItem="S44-pl-N2G" firstAttribute="top" secondItem="Zt3-RN-AYr" secondAttribute="bottom" constant="30" id="Fex-MP-cYq"/>
+                <constraint firstItem="Zt3-RN-AYr" firstAttribute="centerY" secondItem="ohF-TO-79p" secondAttribute="centerY" id="OX2-Nk-h2b"/>
+                <constraint firstItem="Zt3-RN-AYr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="Zik-2P-jVZ"/>
+                <constraint firstItem="ohF-TO-79p" firstAttribute="leading" secondItem="Zt3-RN-AYr" secondAttribute="trailing" constant="20" id="eSA-Zd-PWo"/>
+                <constraint firstItem="ohF-TO-79p" firstAttribute="leading" secondItem="dYE-H7-6LX" secondAttribute="leading" id="lH0-j2-6Wq"/>
+                <constraint firstItem="S44-pl-N2G" firstAttribute="centerY" secondItem="dYE-H7-6LX" secondAttribute="centerY" id="wdz-yn-Fc4"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+</document>
