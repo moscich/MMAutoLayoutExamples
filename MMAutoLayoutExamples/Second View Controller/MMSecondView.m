@@ -37,10 +37,8 @@
   self.leftSpacer = [UIView new];
   [self.leftSpacer setTranslatesAutoresizingMaskIntoConstraints:NO];
   [self.containerView addSubview:self.leftSpacer];
-  self.leftSpacer.backgroundColor = [UIColor orangeColor];
   self.rightSpacer = [UIView new];
   [self.rightSpacer setTranslatesAutoresizingMaskIntoConstraints:NO];
-  self.rightSpacer.backgroundColor = [UIColor orangeColor];
   [self.containerView addSubview:self.rightSpacer];
 
   [self addConstraint:[NSLayoutConstraint constraintWithItem:self.leftSpacer attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.rightSpacer attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0.0]];
@@ -57,12 +55,8 @@
   [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_leftSpacer]-|" options:0 metrics:nil views:views]];
   [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_rightSpacer]-|" options:0 metrics:nil views:views]];
 
-//  [self addConstraint:[NSLayoutConstraint constraintWithItem:self.happyView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:-100]];
   [self addConstraint:[NSLayoutConstraint constraintWithItem:self.happyView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0]];
   [self addConstraint:[NSLayoutConstraint constraintWithItem:self.secondHappyView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0]];
-
-
-//  [self addConstraint:self.containerViewWidthConstraint];
 }
 
 - (void)setCompressionAndHugging:(UISegmentedControl *)control
