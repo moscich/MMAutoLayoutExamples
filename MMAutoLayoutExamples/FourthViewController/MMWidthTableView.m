@@ -12,8 +12,7 @@
 
 - (CGSize)intrinsicContentSize {
     [self layoutIfNeeded];
-    NSLog(@"%@", NSStringFromCGSize(self.contentSize));
-    return [super intrinsicContentSize];
+    return CGSizeMake(UIViewNoIntrinsicMetric, self.contentSize.height);
 }
 
 @end

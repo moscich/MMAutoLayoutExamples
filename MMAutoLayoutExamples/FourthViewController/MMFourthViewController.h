@@ -9,5 +9,6 @@
 @interface MMFourthViewController : UIViewController <UITableViewDataSource>
 
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *widthConstraint;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end

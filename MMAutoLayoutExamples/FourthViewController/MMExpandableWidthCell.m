@@ -19,7 +19,7 @@
     if (self) {
         self.label = [UILabel new];
         [self.label setTranslatesAutoresizingMaskIntoConstraints:NO];
-        self.label.text = @"hello text 1 2 3 4 5 6 7 8 9hello text 1 2 3 4 5 6 7 8 9hello text 1 2 3 4 5 6 7 8 9hello text 1 2 3 4 5 6 7 8 9hello text 1 2 3 4 5 6 7 8 9hello text 1 2 3 4 5 6 7 8 9";
+        self.label.text = @"3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 1 2 3 4";
         [self addSubview:self.label];
     }
 
@@ -30,9 +30,9 @@
     [super updateConstraints];
 
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_label]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_label)]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_label]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_label)]];
+
 //    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.label attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.superview attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0]];
-//    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.label attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.label attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0]];
 //    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.label attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
 }
 

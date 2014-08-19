@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MMFourthViewController">
             <connections>
+                <outlet property="tableView" destination="EV5-65-2tc" id="IYL-gq-TRf"/>
                 <outlet property="view" destination="iN0-l3-epB" id="EFq-CO-f67"/>
                 <outlet property="widthConstraint" destination="cdO-Zr-dyz" id="Q7f-Ad-slV"/>
             </connections>
@@ -15,13 +16,12 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EV5-65-2tc" customClass="MMWidthTableView">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="372" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EV5-65-2tc" customClass="MMWidthTableView">
                     <rect key="frame" x="327" y="198" width="370" height="372"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.93752011458615514" green="1" blue="0.77184331259439642" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="370" id="cdO-Zr-dyz"/>
-                        <constraint firstAttribute="height" constant="372" id="w60-n9-rzV"/>
                     </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="B8H-eT-ULN"/>
