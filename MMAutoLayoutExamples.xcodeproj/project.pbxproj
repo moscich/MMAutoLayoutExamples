@@ -23,6 +23,7 @@
 		530426A410A3DA3198A2D359 /* MMThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530423B999800F2FC210E7F1 /* MMThirdViewController.xib */; };
 		530426A95D1AD804C64BD8CE /* MMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042EA0D5CB01E2CE20DCC8 /* MMTextView.m */; };
 		53042836E3875032D41738DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53042AF7D8AAE1CB600BBA8E /* InfoPlist.strings */; };
+		5304283836A865433CCF39CA /* MMFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304281049889D06862B3DEC /* MMFourthViewController.m */; };
 		5304284E8074566554F3B00B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53042C0457F927A7C7749CDB /* CoreGraphics.framework */; };
 		530428793D5B963AFA2661E9 /* MMThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042EAE946D76D50AD13F98 /* MMThirdViewController.m */; };
 		530428E07D962B77658E46FD /* MMSecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 530422104A839CC9D1084092 /* MMSecondView.m */; };
@@ -37,7 +38,10 @@
 		53042D2D95C7B788AD174119 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53042E0667296317CA5B399F /* XCTest.framework */; };
 		53042D408B0C8BE8A4021B50 /* minion@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5304236708BCD56883B0037B /* minion@2x.jpg */; };
 		53042DD9919ED6F11D764A16 /* MMSecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530424B3791EA6E0FC55AC6C /* MMSecondView.xib */; };
+		53042E0EB758FE7826FC1876 /* MMWidthTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042A42DDFF96485CDFACFA /* MMWidthTableView.m */; };
 		53042F6CEF317185A10A983B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53042EA728BC4DFF5E47D34C /* UIKit.framework */; };
+		7995209819A1DB7E009F9DEA /* MMExpandableWidthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7995209719A1DB7E009F9DEA /* MMExpandableWidthCell.m */; };
+		79B5E37C199CEE7000F62A1C /* MMFourthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B5E37B199CEE7000F62A1C /* MMFourthView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,11 +80,14 @@
 		530426386DE280FE1061AB45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5304273512B48560B2A97F25 /* MMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewController.h; sourceTree = "<group>"; };
 		530427797BA5253A6BEE1EDD /* MMAutoLayoutExamples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MMAutoLayoutExamples-Info.plist"; sourceTree = "<group>"; };
+		5304281049889D06862B3DEC /* MMFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFourthViewController.m; sourceTree = "<group>"; };
 		5304282A7D26BA0F50652932 /* MMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableView.m; sourceTree = "<group>"; };
 		530429418EF0C6478D3B00D5 /* MMSecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecondView.h; sourceTree = "<group>"; };
 		530429558E117BE5187B86EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		530429604A14DA85D2EF5142 /* MMThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMThirdViewController.h; sourceTree = "<group>"; };
+		530429CBEA44A8AA4FF05C38 /* MMFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMFourthViewController.h; sourceTree = "<group>"; };
 		53042A3D334D6C5ACD27D32F /* MMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextView.h; sourceTree = "<group>"; };
+		53042A42DDFF96485CDFACFA /* MMWidthTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWidthTableView.m; sourceTree = "<group>"; };
 		53042AE80453BD5EED257F87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		53042B135364316797F75B9A /* MMHappyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMHappyView.xib; sourceTree = "<group>"; };
 		53042BB179E973683FE1967A /* MMAutoLayoutExamplesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MMAutoLayoutExamplesTests-Info.plist"; sourceTree = "<group>"; };
@@ -93,11 +100,15 @@
 		53042D55E5276A57011C26E4 /* MMHappyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHappyView.h; sourceTree = "<group>"; };
 		53042DFCE2DF739BD5249869 /* MMAutoLayoutExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMAutoLayoutExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53042E0667296317CA5B399F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		53042E0F0B052E3F01939EED /* MMWidthTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWidthTableView.h; sourceTree = "<group>"; };
 		53042EA0D5CB01E2CE20DCC8 /* MMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextView.m; sourceTree = "<group>"; };
 		53042EA728BC4DFF5E47D34C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53042EAE946D76D50AD13F98 /* MMThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMThirdViewController.m; sourceTree = "<group>"; };
 		53042EC1F073BF28085F207C /* MMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewController.m; sourceTree = "<group>"; };
 		53042ED1F564D659BAABD46C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7995209619A1DB7E009F9DEA /* MMExpandableWidthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExpandableWidthCell.h; sourceTree = "<group>"; };
+		7995209719A1DB7E009F9DEA /* MMExpandableWidthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExpandableWidthCell.m; sourceTree = "<group>"; };
+		79B5E37B199CEE7000F62A1C /* MMFourthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMFourthView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +178,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		530424D211A5C67BC0C03A6A /* FourthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5304281049889D06862B3DEC /* MMFourthViewController.m */,
+				530429CBEA44A8AA4FF05C38 /* MMFourthViewController.h */,
+				79B5E37B199CEE7000F62A1C /* MMFourthView.xib */,
+				7995209619A1DB7E009F9DEA /* MMExpandableWidthCell.h */,
+				7995209719A1DB7E009F9DEA /* MMExpandableWidthCell.m */,
+				5304268F77DB65C94DE3AE87 /* MMWidthTableVIew */,
+				53042A42DDFF96485CDFACFA /* MMWidthTableView.m */,
+				53042E0F0B052E3F01939EED /* MMWidthTableView.h */,
+			);
+			path = FourthViewController;
+			sourceTree = "<group>";
+		};
 		5304260E846EBF602CD79747 /* Second View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +220,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5304268F77DB65C94DE3AE87 /* MMWidthTableVIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MMWidthTableVIew;
+			sourceTree = "<group>";
+		};
 		53042911F1B5420621CF8F12 /* MMAutoLayoutExamplesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +250,7 @@
 				5304240CB8456E992F11467E /* Third View Controller */,
 				24B3578E1990CC6C00F3FE23 /* Fifth VC */,
 				24B357961990D36F00F3FE23 /* Sixth VC */,
+				530424D211A5C67BC0C03A6A /* FourthViewController */,
 			);
 			path = MMAutoLayoutExamples;
 			sourceTree = "<group>";
@@ -336,6 +370,7 @@
 			files = (
 				53042D1EA056A153D83B6B89 /* InfoPlist.strings in Resources */,
 				53042AA86DD889545EBD114D /* Images.xcassets in Resources */,
+				79B5E37C199CEE7000F62A1C /* MMFourthView.xib in Resources */,
 				53042B77FCE066C49AA4638F /* MMFirstView.xib in Resources */,
 				24B357901990CC8500F3FE23 /* FifthViewController.xib in Resources */,
 				53042BDC9D45C7537C8FBD71 /* MMHappyView.xib in Resources */,
@@ -361,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7995209819A1DB7E009F9DEA /* MMExpandableWidthCell.m in Sources */,
 				24B3578D1990CC5E00F3FE23 /* FifthViewController.m in Sources */,
 				53042C2F83CF950BA0C1DC7C /* main.m in Sources */,
 				53042AF67E752DDB2C538A27 /* MMAppDelegate.m in Sources */,
@@ -375,6 +411,8 @@
 				24B357941990D36800F3FE23 /* SixthViewController.m in Sources */,
 				530423978F12C69BA6232E0B /* ChangingLayoutView.m in Sources */,
 				530426A95D1AD804C64BD8CE /* MMTextView.m in Sources */,
+				5304283836A865433CCF39CA /* MMFourthViewController.m in Sources */,
+				53042E0EB758FE7826FC1876 /* MMWidthTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

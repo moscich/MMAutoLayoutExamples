@@ -9,6 +9,7 @@
 #import "MMThirdViewController.h"
 #import "FifthViewController.h"
 #import "SixthViewController.h"
+#import "MMFourthViewController.h"
 
 
 @implementation MMTableViewController {
@@ -18,7 +19,7 @@
 - (id)init {
   self = [super init];
   if (self) {
-    self.controllers = @[[MMFirstViewController new], [MMSecondViewController new], [MMThirdViewController new], [FifthViewController new], [SixthViewController new]];
+    self.controllers = @[[MMFirstViewController new], [MMSecondViewController new], [MMThirdViewController new], [MMFourthViewController new], [FifthViewController new], [SixthViewController new]];
   }
 
   return self;
